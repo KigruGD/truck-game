@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://2hai7yyyhwp5"]
+
+[ext_resource type="Script" path="res://Truck.gd" id="1_dkyae"]
+[ext_resource type="Texture2D" uid="uid://cj5oan1x6sent" path="res://assets/ph_truck.png" id="2_luh1c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gjkif"]
+size = Vector2(17, 44)
+
+[node name="Truck" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_dkyae")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_luh1c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_gjkif")
