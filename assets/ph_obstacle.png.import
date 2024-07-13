@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://drxin7pl8h3rv"
+=======
+uid="uid://bey84mvv756ln"
+>>>>>>> f0cc2cfe51c3a15952b6c247aa74820e44f4588e
 path="res://.godot/imported/ph_obstacle.png-e2867320971aca14fb4f01ef85ea4295.ctex"
 metadata={
 "vram_texture": false
