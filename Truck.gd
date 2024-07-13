@@ -9,7 +9,7 @@ var lane = 3
 func _ready():
 	pass
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	if Input.is_action_just_pressed("turn left") and !is_moving and lane != 1:
 		lane -= 1
 		target_x = position.x - 27

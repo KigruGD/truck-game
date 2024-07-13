@@ -7,6 +7,7 @@
 size = Vector2(17, 44)
 
 [node name="Truck" type="CharacterBody2D"]
+z_index = 1
 motion_mode = 1
 script = ExtResource("1_dkyae")
 
