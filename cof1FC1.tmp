@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5j1qwjggelqc"]
+
+[ext_resource type="Script" path="res://coffee.gd" id="1_uk8m4"]
+[ext_resource type="Texture2D" uid="uid://cw4hjdltw6h2g" path="res://assets/ph_obstacle.png" id="2_y5rwc"]
+
+[node name="Coffee" type="RigidBody2D"]
+script = ExtResource("1_uk8m4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(3, -11)
+texture = ExtResource("2_y5rwc")
