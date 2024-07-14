@@ -1,4 +1,3 @@
-class_name Obstacle extends RigidBody2D
+class_name Obstacle extends CharacterBody2D
 
 var speed: float
-var hitbox: CollisionShape2D

@@ -1,11 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://2hai7yyyhwp5"]
+[gd_scene load_steps=9 format=3 uid="uid://2hai7yyyhwp5"]
 
 [ext_resource type="Script" path="res://Truck.gd" id="1_dkyae"]
 [ext_resource type="Texture2D" uid="uid://cj5oan1x6sent" path="res://assets/ph_truck.png" id="2_luh1c"]
 [ext_resource type="Texture2D" uid="uid://dgt42av2e72td" path="res://assets/ph_truck_left_turn.png" id="3_fouvc"]
 [ext_resource type="Texture2D" uid="uid://kgq5kannl2mh" path="res://assets/ph_truck_bounce_b.png" id="3_hh3y2"]
 [ext_resource type="Texture2D" uid="uid://c61hxg2kb82vr" path="res://assets/ph_truck_right_turn.png" id="4_5iy4w"]
-[ext_resource type="Texture2D" uid="uid://de8s8ptpx4ajc" path="res://assets/ph_fish.png" id="5_yfd7g"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kq166"]
 atlas = ExtResource("3_fouvc")
@@ -46,18 +45,15 @@ size = Vector2(17, 44)
 
 [node name="Truck" type="CharacterBody2D"]
 z_index = 1
+collision_mask = 0
 motion_mode = 1
 script = ExtResource("1_dkyae")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_3xy0b")
 animation = &"driving"
-frame_progress = 0.974952
+frame_progress = 0.277443
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, -1)
 shape = SubResource("RectangleShape2D_gjkif")
-
-[node name="PhFish" type="Sprite2D" parent="."]
-position = Vector2(-40, -18)
-texture = ExtResource("5_yfd7g")
