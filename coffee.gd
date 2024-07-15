@@ -7,7 +7,7 @@ func _ready():
 	hitbox.body_entered.connect(on_body_entered)
 	
 	coffee.speed = 1
-	coffee.sleep_value = 35
+	coffee.sleep_value = 100
 	
 	velocity.y = 100 * coffee.speed
 
@@ -20,5 +20,5 @@ func _process(_delta):
 	
 
 func on_body_entered(_body):
-	Events.obstacle_hit.emit()
+	Events.sleep_obstacle_hit.emit(coffee)
 	queue_free()
