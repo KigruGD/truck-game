@@ -9,7 +9,7 @@ func _ready():
 	coffee.speed = 1
 	coffee.sleep_value = 100
 	
-	velocity.y = 100 * coffee.speed
+	velocity.y = 90 * coffee.speed
 
 func _physics_process(_delta):
 	move_and_slide()
