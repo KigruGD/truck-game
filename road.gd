@@ -1,8 +1,10 @@
 extends Node2D
 
 const CoffeeScene = preload("res://coffee.tscn")
-@onready var sleep: float = 300
+
 const Max_Sleep :float = 300
+@onready var sleep: float = Max_Sleep
+
 @onready var coffee_timer = $CoffeeTimer
 
 
